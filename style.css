@@ -1,0 +1,42 @@
+body{
+margin:0;
+font-family:Arial;
+background:black;
+color:#00ff9c;
+text-align:center;
+}
+
+.main{
+margin-top:120px;
+}
+
+.profile{
+width:180px;
+border-radius:50%;
+border:3px solid #00ff9c;
+}
+
+h1{
+font-size:40px;
+margin-top:15px;
+}
+
+.about{
+font-size:18px;
+margin:20px;
+}
+
+.btn{
+background:#00ff9c;
+color:black;
+padding:12px 25px;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+footer{
+margin-top:150px;
+border-top:1px solid #00ff9c;
+padding:20px;
+}
