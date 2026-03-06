@@ -1,97 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Huzaifa Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huzaifa Islam | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+    </style>
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-  <div class="logo">Huzaifa</div>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <nav class="p-6 flex justify-between items-center bg-white shadow-sm sticky top-0 z-50">
+        <div class="text-2xl font-bold text-slate-800">🛡️ IAC</div>
+        <div class="space-x-6 hidden md:block text-slate-600">
+            <a href="#about" class="hover:text-blue-600">About</a>
+            <a href="#skills" class="hover:text-blue-600">Skills</a>
+            <a href="#projects" class="hover:text-blue-600">Projects</a>
+            <a href="#contact" class="hover:text-blue-600">Contact</a>
+        </div>
+    </nav>
 
-<!-- HOME -->
-<section id="home" class="hero">
-  <div class="hero-content">
-    <img src="profile.jpg" alt="Your Photo" class="hero-pic">
-    <p class="hero-title">Cyber Security SPECIAL</p>
-    <h1 class="hero-name">Huzaifa Islam</h1>
-    <div class="hero-buttons">
-      <a href="#contact" class="btn">Get in Touch</a>
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="cv.pdf" target="_blank" class="btn">Download CV</a>
-      <a href="https://github.com/Huzaifa" target="_blank" class="btn">GitHub</a>
-    </div>
-  </div>
-</section>
+    <section class="py-20 px-6 text-center">
+        <img src="your-photo.jpg" alt="Iftey" class="w-40 h-40 rounded-full mx-auto border-4 border-blue-500 mb-6 object-cover shadow-lg">
+        <p class="text-blue-600 font-medium mb-2 border border-blue-200 inline-block px-4 py-1 rounded-full text-sm">🛡️ Cybersecurity Enthusiast</p>
+        <h1 class="text-5xl font-extrabold text-slate-900 mb-4 uppercase tracking-tight">Iftey Alam <span class="text-teal-600">Chowdhury</span></h1>
+        <p class="max-w-2xl mx-auto text-slate-600 text-lg leading-relaxed">
+            Tech-forward student deep-diving into networking & cybersecurity. Building systems that are secure, efficient, and one step ahead of threats.
+        </p>
+        <div class="mt-10 space-x-4">
+            <a href="#contact" class="bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-800 transition">Get in Touch</a>
+            <a href="#" class="border border-slate-300 px-8 py-3 rounded-lg font-semibold hover:bg-slate-50 transition">View Projects</a>
+        </div>
+    </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <div class="about-info">
-    <img src="aiub.jpg" alt="AIUB" class="about-pic">
-    <div>
-      <p>BSc in Computer Network and Cyber Security, AIUB</p>
-      <p>Graduation: 2025</p>
-    </div>
-  </div>
-  <p>I am a Cyber Security Specialist passionate about ethical hacking, network security and digital protection.</p>
-</section>
+    <section id="skills" class="py-16 bg-slate-50 px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-slate-800">Skills & <span class="text-teal-600">Expertise</span></h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <i class="fas fa-shield-alt text-blue-500 text-2xl mb-4"></i>
+                <h3 class="font-bold text-lg">Cybersecurity & Ethical Hacking</h3>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <i class="fas fa-bug text-teal-500 text-2xl mb-4"></i>
+                <h3 class="font-bold text-lg">Penetration Testing (Web, Network)</h3>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <i class="fas fa-search text-orange-500 text-2xl mb-4"></i>
+                <h3 class="font-bold text-lg">Vulnerability Assessment</h3>
+            </div>
+        </div>
+    </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skill">
-    <p>Python</p>
-    <div class="bar"><span style="width:85%"></span></div>
-  </div>
-  <div class="skill">
-    <p>Networking</p>
-    <div class="bar"><span style="width:80%"></span></div>
-  </div>
-  <div class="skill">
-    <p>Ethical Hacking</p>
-    <div class="bar"><span style="width:90%"></span></div>
-  </div>
-  <div class="skill">
-    <p>Linux</p>
-    <div class="bar"><span style="width:75%"></span></div>
-  </div>
-</section>
+    <section id="about" class="py-16 px-6 max-w-5xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden md:flex">
+            <div class="md:w-1/2 bg-slate-200 h-64 md:h-auto">
+                <img src="university.jpg" class="w-full h-full object-cover" alt="University Campus">
+            </div>
+            <div class="p-10 md:w-1/2">
+                <h3 class="text-blue-600 font-bold flex items-center gap-2 mb-4">
+                    <i class="fas fa-graduation-cap"></i> Education
+                </h3>
+                <h2 class="text-3xl font-bold text-slate-900 mb-2">BSc in Computer Networking & Cyber Security</h2>
+                <p class="text-slate-600 mb-4">American International University-Bangladesh</p>
+                <p class="text-slate-400 font-medium">Expected Graduation: 2028</p>
+            </div>
+        </div>
+    </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project-card">
-    <h3>Network Scanner</h3>
-    <p>Python tool to detect devices and network vulnerabilities.</p>
-  </div>
-  <div class="project-card">
-    <h3>Password Cracker</h3>
-    <p>Ethical brute-force password testing script.</p>
-  </div>
-</section>
+    <section class="py-16 bg-white px-6">
+        <div class="max-w-5xl mx-auto border-l-4 border-blue-500 pl-8 ml-4">
+            <h3 class="text-blue-600 font-bold mb-4 flex items-center gap-2">
+                <i class="fas fa-briefcase"></i> Experience
+            </h3>
+            <h2 class="text-3xl font-bold text-slate-900">Cybersecurity Intern</h2>
+            <p class="text-slate-500 mb-6 italic font-medium">SMM Solution Ltd · 1 Year</p>
+            <ul class="space-y-3 text-slate-700">
+                <li><i class="fas fa-check-circle text-teal-500 mr-2"></i> Conducted vulnerability scans on web applications</li>
+                <li><i class="fas fa-check-circle text-teal-500 mr-2"></i> Assisted in penetration testing and security assessments</li>
+                <li><i class="fas fa-check-circle text-teal-500 mr-2"></i> Prepared detailed security reports with mitigation strategies</li>
+            </ul>
+        </div>
+    </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Connect With Me</h2>
-  <p>Phone: 01944897074</p>
-  <p>Email: lafinislam@gmail.com</p>
-</section>
+    <section id="contact" class="py-20 px-6 bg-slate-900 text-white text-center">
+        <h2 class="text-4xl font-bold mb-4 italic">Let’s <span class="text-teal-400">Connect</span></h2>
+        <p class="text-slate-400 max-w-md mx-auto mb-10">Interested in collaboration or just want to chat about hacking? Reach out!</p>
+        <div class="max-w-md mx-auto space-y-4">
+            <div class="bg-slate-800 p-4 rounded-lg flex items-center justify-center gap-4">
+                <i class="fas fa-envelope text-teal-400"></i>
+                <span>huzaifaislam@gmail.com</span>
+            </div>
+            <div class="bg-slate-800 p-4 rounded-lg flex items-center justify-center gap-4">
+                <i class="fas fa-phone text-teal-400"></i>
+                <span>01944897074</span>
+            </div>
+        </div>
+    </section>
 
-<footer>
-  <p>© 2026 Huzaifa Islam</p>
-</footer>
+    <footer class="py-10 text-center text-slate-500 bg-slate-950 text-sm">
+        © 2026 Huzaifa Islam | Built for Security
+    </footer>
 
 </body>
 </html>
